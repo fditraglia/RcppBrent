@@ -5,13 +5,24 @@
 
 using namespace Rcpp;
 
-// rcpp_hello
-List rcpp_hello();
-RcppExport SEXP RcppBrent_rcpp_hello() {
+// f
+double f(double x);
+RcppExport SEXP RcppBrent_f(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello());
+    Rcpp::traits::input_parameter< double >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(f(x));
+    return rcpp_result_gen;
+END_RCPP
+}
+// min_f
+List min_f();
+RcppExport SEXP RcppBrent_min_f() {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    rcpp_result_gen = Rcpp::wrap(min_f());
     return rcpp_result_gen;
 END_RCPP
 }
