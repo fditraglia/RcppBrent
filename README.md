@@ -17,5 +17,5 @@ If you want to use the BRENT library in your Rcpp-based package, you can use Rcp
 The file `optimize.cpp` provides a simple example of how to use `brent::local_min`. 
 This entails creating a functor that inherits from the class `brent::func_base` which appears in `brent.hpp`.
 The function `local_min` and its associated documentation appear within `brent.cpp`.
-Note that you the file `brent_pcb.cpp` is merely a testing file which I include here for reference.
+Note that the file `brent_pcb.cpp` is merely a testing file which I include here for reference.
 You do not need to included it in your package to use the BRENT routines.
