@@ -10,7 +10,7 @@ According to its creator John Burkart:
 The BRENT library is licensed under [Lesser GPL Version 3.0](https://people.sc.fsu.edu/~jburkardt/txt/gnu_lgpl.txt).
 
 # Why is this useful?
-The R's one-dimensional minimizer `optimize` is very handy, and there are times when one may wish to have a C++ version of the same function. The function `brent::local_min` provides exactly this.
+R's one-dimensional minimizer `optimize` is very handy, and there are times when one may wish to have a C++ version of the same function. The function `brent::local_min` provides exactly this.
 
 # Helpful Hints
 If you want to use the BRENT library in your Rcpp-based package, you can use RcppBrent as a template. 
